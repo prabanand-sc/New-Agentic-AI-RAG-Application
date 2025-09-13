@@ -26,22 +26,21 @@ Here are a few snapshots of the agent in action, demonstrating its different cap
 
 The agent provides a concise, high-level summary of the latest news, covering key events in different regions and topics.
 
-`[Basic Chatbot] (/Screen Shorts/Basic Chatbot.png)`
+![Basic Chatbot ](<Screen Shorts/Basic Chatbot.png>)
 
 
 ### 2\. Agent with Tool Calling & Structured Output
 
 This view shows the agent's "thought process." It starts by executing a **Tool Call** to fetch raw data. It then processes this information and presents the most critical news in a structured, easy-to-read table.
 
-`[INSERT YOUR CHATBOT WITH TOOL CALL SCREENSHOT HERE]`
-*e.g., a path like `./images/Chatbot with tool call.jpg`*
+![ Chatbot with tool call ](<Screen Shorts/Chatbot with tool call.png>)
+
 
 ### 3\. Weekly News Explorer
 
 The agent can generate a curated summary of news for specific periods, complete with headlines and source links, allowing users to catch up on the week's events at a glance.
 
-`[INSERT YOUR WEEKLY NEWS SUMMARY SCREENSHOT HERE]`
-*e.g., a path like `./images/Chatbot with weekly news summary.jpg`*
+![Chatbot with weekly news summary](<Screen Shorts/Chatbot with weekly news summary.png>)
 
 -----
 
