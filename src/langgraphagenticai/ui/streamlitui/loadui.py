@@ -9,8 +9,8 @@ class LoadStreamlitUI:
         self.user_controls={}
 
     def load_streamlit_ui(self):
-        st.set_page_config(page_title= "🤖 " + self.config.get_page_title(), layout="wide")
-        st.header("🤖 " + self.config.get_page_title())
+        st.set_page_config(page_title= " " + self.config.get_page_title(), layout="wide")
+        st.header(" " + self.config.get_page_title())
         st.session_state.timeframe = ''
         st.session_state.IsFetchButtonClicked = False
 
@@ -30,7 +30,7 @@ class LoadStreamlitUI:
                 self.user_controls["GROQ_API_KEY"] = st.session_state["GROQ_API_KEY"]=st.text_input("API Key",type="password")
                 # Validate API key
                 if not self.user_controls["GROQ_API_KEY"]:
-                    st.warning("⚠️ Please enter your GROQ API key to proceed. Don't have? refer : https://console.groq.com/keys ")
+                    st.warning(" Please enter your GROQ API key to proceed. Don't have? refer : https://console.groq.com/keys ")
             
             ## USecase selection
             self.user_controls["selected_usecase"]=st.selectbox("Select Usecases",usecase_options)
@@ -40,14 +40,14 @@ class LoadStreamlitUI:
 
                 # Validate API key
                 if not self.user_controls["TAVILY_API_KEY"]:
-                    st.warning("⚠️ Please enter your TAVILY_API_KEY key to proceed. Don't have? refer : https://app.tavily.com/home")
+                    st.warning(" Please enter your TAVILY_API_KEY key to proceed. Don't have? refer : https://app.tavily.com/home")
 
             if self.user_controls['selected_usecase']=="AI News":
-                st.subheader("📰 AI News Explorer ")
+                st.subheader(" AI News Explorer ")
                 
                 with st.sidebar:
                     time_frame = st.selectbox(
-                        "📅 Select Time Frame",
+                        " Select Time Frame",
                         ["Daily", "Weekly", "Monthly"],
                         index=0
                     )
